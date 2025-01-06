@@ -8,4 +8,17 @@ public class Muveletek {
         int b = Integer.parseInt(num2);
         return (long) a+b;
     }
+
+    public static double oszt(String num1, String num2) {
+        Double a = Double.parseDouble(num1);
+        Double b = Double.parseDouble(num2);
+        if (b == 0) throw new ArithmeticException("Nem oszthatunk 0-val.");
+        return a/b;
+    }
+
+    public static double oszt(double num1, double num2){
+        return num1/num2;
+    }
+
+
 }
